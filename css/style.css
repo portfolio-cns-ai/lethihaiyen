@@ -143,6 +143,7 @@ button:focus-visible {
 }
 
 .campaign-cover {
+  position: relative;
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(320px, 0.78fr);
   gap: 42px;
@@ -269,15 +270,15 @@ h1 {
   position: relative;
   display: grid;
   justify-items: end;
-  padding-top: 18px;
+  padding-top: 70px;
 }
 
 .vnu-logo {
   position: absolute;
-  top: -28px;
-  right: 0;
+  top: 34px;
+  right: clamp(110px, 8vw, 170px);
   z-index: 2;
-  width: 118px;
+  width: 112px;
   aspect-ratio: 1;
   object-fit: contain;
   border: 1px solid var(--color-border);
@@ -563,8 +564,9 @@ h1 {
   }
 
   .vnu-logo {
-    top: -18px;
-    right: 10px;
+    position: static;
+    justify-self: end;
+    margin: -8px 10px 0 0;
     width: 96px;
   }
 
