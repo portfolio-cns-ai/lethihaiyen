@@ -351,6 +351,36 @@ h1 {
   margin-top: 18px;
 }
 
+.highlight-strip {
+  margin-top: 18px;
+  padding: 22px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: linear-gradient(135deg, #ffffff, #fff1f2);
+  box-shadow: var(--shadow);
+}
+
+.highlight-strip strong {
+  display: block;
+  margin-bottom: 12px;
+  color: var(--color-primary);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.highlight-strip ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px 24px;
+  margin: 0;
+  padding-left: 20px;
+}
+
+.highlight-strip li {
+  color: var(--color-secondary);
+  font-weight: 700;
+}
+
 .casebook {
   display: grid;
   gap: 18px;
@@ -406,6 +436,10 @@ h1 {
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
   background: var(--color-surface);
+}
+
+.reflection-wide {
+  grid-column: span 2;
 }
 
 .reflection-card h3 {
@@ -505,6 +539,10 @@ h1 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .highlight-strip ul {
+    grid-template-columns: 1fr;
+  }
+
   .case-item {
     grid-template-columns: 96px minmax(0, 1fr);
   }
@@ -567,6 +605,10 @@ h1 {
   .reflection-grid,
   .case-item {
     grid-template-columns: 1fr;
+  }
+
+  .reflection-wide {
+    grid-column: auto;
   }
 
   .case-number {
