@@ -266,12 +266,17 @@ h1 {
 }
 
 .cover-visual {
+  position: relative;
   display: grid;
   justify-items: end;
-  gap: 18px;
+  padding-top: 18px;
 }
 
 .vnu-logo {
+  position: absolute;
+  top: -28px;
+  right: 0;
+  z-index: 2;
   width: 118px;
   aspect-ratio: 1;
   object-fit: contain;
@@ -554,6 +559,13 @@ h1 {
 
   .cover-visual {
     justify-items: start;
+    padding-top: 0;
+  }
+
+  .vnu-logo {
+    top: -18px;
+    right: 10px;
+    width: 96px;
   }
 
   .snapshot-grid,
