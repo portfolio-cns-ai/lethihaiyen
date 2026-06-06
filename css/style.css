@@ -265,6 +265,20 @@ h1 {
   transform: translateY(-1px);
 }
 
+.cover-visual {
+  display: grid;
+  justify-items: end;
+  gap: 18px;
+}
+
+.vnu-logo {
+  width: min(330px, 72%);
+  border: 1px solid var(--color-border);
+  border-radius: 14px;
+  background: #ffffff;
+  box-shadow: 0 12px 30px rgba(30, 41, 59, 0.1);
+}
+
 .poster-board {
   position: relative;
   padding: 18px;
@@ -530,8 +544,13 @@ h1 {
     grid-template-columns: 1fr;
   }
 
+  .cover-visual,
   .poster-board {
     max-width: 560px;
+  }
+
+  .cover-visual {
+    justify-items: start;
   }
 
   .snapshot-grid,
