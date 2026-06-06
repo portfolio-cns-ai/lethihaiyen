@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="LHY portfolio">
+  <rect width="64" height="64" rx="12" fill="#1e293b"/>
+  <path d="M12 42V16h8v18h13v8H12Zm26 0V16h8v26h-8Z" fill="#fff7ed"/>
+  <circle cx="47" cy="19" r="8" fill="#e85d75"/>
+  <circle cx="51" cy="43" r="7" fill="#f59e0b"/>
+</svg>
